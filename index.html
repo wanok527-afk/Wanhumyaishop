@@ -3,23 +3,76 @@
 <head>
 <title>Wan Script Hub</title>
 <style>
-body{background:black;color:white;text-align:center;font-family:sans-serif}
-button{padding:10px 20px;background:lime;border:none}
+body{
+background:black;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+h1{
+color:#00ff88;
+text-shadow:0 0 10px #00ff88;
+}
+
+.box{
+border:1px solid #00ff88;
+padding:20px;
+margin:20px;
+border-radius:10px;
+box-shadow:0 0 10px #00ff88;
+}
+
+button{
+background:#00ff88;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#00cc66;
+}
 </style>
 </head>
 
 <body>
 
 <h1>Wan Roblox Script Hub</h1>
-<p>Free Script</p>
 
-<button onclick="copy()">Copy Script</button>
+<div class="box">
+<h3>Blox Fruits Script</h3>
+<button onclick="copy1()">Copy Script</button>
+</div>
+
+<div class="box">
+<h3>Blade Ball Script</h3>
+<button onclick="copy2()">Copy Script</button>
+</div>
+
+<div class="box">
+<h3>Auto Farm Script</h3>
+<button onclick="copy3()">Copy Script</button>
+</div>
 
 <script>
-function copy(){
-navigator.clipboard.writeText("loadstring(game:HttpGet('SCRIPT'))()");
+
+function copy1(){
+navigator.clipboard.writeText("loadstring(game:HttpGet('YOURSCRIPT'))()");
 alert("Copied!");
 }
+
+function copy2(){
+navigator.clipboard.writeText("loadstring(game:HttpGet('YOURSCRIPT'))()");
+alert("Copied!");
+}
+
+function copy3(){
+navigator.clipboard.writeText("loadstring(game:HttpGet('YOURSCRIPT'))()");
+alert("Copied!");
+}
+
 </script>
 
 </body>
